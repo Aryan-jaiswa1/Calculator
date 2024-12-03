@@ -1,0 +1,11 @@
+pragma solidity ^0.8.0;
+
+contract Voting{
+    struct Candidate{
+        string name;
+        uint256 voteCount;
+    }
+    Candidate[] public Candidate;
+    address owner;
+    mapping (address => bool) public voters;
+}
